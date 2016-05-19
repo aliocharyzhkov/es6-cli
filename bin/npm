@@ -1,10 +1,10 @@
 #!/bin/bash
 
-host_dir=`pwd`
-node_version="5.11"
-docker_workdir="/es6-cli"
+HOST_DIR=`pwd`
+NODE_VERSION="5.11"
+DOCKER_WORKDIR="/es6-cli"
 
-docker run --rm -v $host_dir:$docker_workdir -w $docker_workdir node:$node_version npm "$@"
+docker run --rm -v $HOST_DIR:$DOCKER_WORKDIR -w $DOCKER_WORKDIR node:$NODE_VERSION npm "$@"
 
 echo
 exit 0
